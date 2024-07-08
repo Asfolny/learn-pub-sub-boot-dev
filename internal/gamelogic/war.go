@@ -14,7 +14,9 @@ const (
 	WarOutcomeDraw
 )
 
-func (gs *GameState) HandleWar(rw RecognitionOfWar) (outcome WarOutcome, winner string, loser string) {
+func (gs *GameState) HandleWar(
+	rw RecognitionOfWar,
+) (outcome WarOutcome, winner string, loser string) {
 	defer fmt.Println("------------------------")
 	fmt.Println()
 	fmt.Println("==== War Declared ====")
